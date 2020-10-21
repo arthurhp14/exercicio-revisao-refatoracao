@@ -1,11 +1,12 @@
-#include <string>
-#include "Empregado.hpp"
+#include "Engenheiro.hpp"
 
-class Engenheiro : public Empregado {
+int Engenheiro :: getProjetos()
+{
+    return this -> Projetos;
+}
+void Engenheiro :: setProjetos(int Projetos_)
+{
+    this -> Projetos = Projetos_;
+}
 
-  public:
-    std::string nome;  
-	int projetos;
-	
-};
 
